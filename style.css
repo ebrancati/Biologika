@@ -12,3 +12,15 @@ body.dark-mode {
 .dark-mode footer {
     background-color: #333333 !important;
 }
+
+.dark-mode a {
+    color: white;
+}
+
+.dark-mode #chi-siamo {
+    color: #333333;
+}
+
+.dark-mode a:hover {
+    color: rgb(137, 137, 137);
+}
