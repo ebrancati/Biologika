@@ -5,79 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biologika - Prodotti</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="icon" type="image/x-icon" href="">
     <link rel="stylesheet" href="style.css">
     <script defer src="./js/script.js"></script>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Biologika</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Homepage</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./prodotti.html" style="text-decoration: underline;">Prodotti</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="./chi-siamo.html">Chi Siamo</a></li>
-                </ul>
-                <button class="btn btn-dark ms-3" id="darkModeToggle">Dark Mode</button>
+<body class="bg-white text-gray-900">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a class="text-xl font-semibold text-green-500" href="#">Biologika</a>
+                <button class="lg:hidden text-gray-500 hover:text-gray-700" type="button"
+                    aria-label="Toggle navigation">
+                    <span class="block w-6 h-1 bg-gray-600 mb-1"></span>
+                    <span class="block w-6 h-1 bg-gray-600 mb-1"></span>
+                    <span class="block w-6 h-1 bg-gray-600"></span>
+                </button>
+                <div class="hidden lg:flex space-x-6">
+                    <a href="./index.html" class="text-gray-700 hover:underline">Homepage</a>
+                    <a href="./prodotti.html" class="text-green-500 hover:underline">Prodotti</a>
+                    <a href="./chi-siamo.html" class="text-gray-700 hover:underline">Chi Siamo</a>
+                </div>
+                <button id="darkModeToggle" class="bg-gray-800 text-white px-4 py-2 rounded-lg">Dark Mode</button>
             </div>
         </div>
     </nav>
 
-    <header class="bg-success text-white text-center py-5">
-        <div class="container">
-            <h1>I Nostri Prodotti</h1>
-            <p>Scopri la nostra selezione di prodotti biologici di alta qualità.</p>
+    <header class="bg-green-600 text-white text-center py-16">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-semibold">I Nostri Prodotti</h1>
+            <p class="text-lg mt-4">Scopri la nostra selezione di prodotti biologici di alta qualità.</p>
         </div>
     </header>
 
-    <section class="container my-5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="biscotti.jpg" class="card-img-top" alt="Biscotti biologici">
-                    <div class="card-body">
-                        <h5 class="card-title">Biscotti Biologici</h5>
-                        <p class="card-text">Realizzati con ingredienti naturali, senza conservanti.</p>
-                        <a href="#" class="btn btn-success">Scopri di più</a>
-                    </div>
+    <section class="container mx-auto my-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="max-w-xs mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="biscotti.jpg" class="w-full h-56 object-cover" alt="Biscotti biologici">
+                <div class="p-6">
+                    <h5 class="text-xl font-semibold text-green-600">Biscotti Biologici</h5>
+                    <p class="text-gray-600 mt-2">Realizzati con ingredienti naturali, senza conservanti.</p>
+                    <a href="#" class="block mt-4 text-center text-white bg-green-500 py-2 px-4 rounded-lg">Scopri di
+                        più</a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="miele.jpg" class="card-img-top" alt="Miele biologico">
-                    <div class="card-body">
-                        <h5 class="card-title">Miele Naturale</h5>
-                        <p class="card-text">Raccolto dalle nostre api in ambiente incontaminato.</p>
-                        <a href="#" class="btn btn-success">Scopri di più</a>
-                    </div>
+            <div class="max-w-xs mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="miele.jpg" class="w-full h-56 object-cover" alt="Miele biologico">
+                <div class="p-6">
+                    <h5 class="text-xl font-semibold text-green-600">Miele Naturale</h5>
+                    <p class="text-gray-600 mt-2">Raccolto dalle nostre api in ambiente incontaminato.</p>
+                    <a href="#" class="block mt-4 text-center text-white bg-green-500 py-2 px-4 rounded-lg">Scopri di
+                        più</a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="marmellata.jpg" class="card-img-top" alt="Marmellata biologica">
-                    <div class="card-body">
-                        <h5 class="card-title">Marmellate Artigianali</h5>
-                        <p class="card-text">Preparata con frutta fresca senza additivi chimici.</p>
-                        <a href="#" class="btn btn-success">Scopri di più</a>
-                    </div>
+            <div class="max-w-xs mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="marmellata.jpg" class="w-full h-56 object-cover" alt="Marmellata biologica">
+                <div class="p-6">
+                    <h5 class="text-xl font-semibold text-green-600">Marmellate Artigianali</h5>
+                    <p class="text-gray-600 mt-2">Preparata con frutta fresca senza additivi chimici.</p>
+                    <a href="#" class="block mt-4 text-center text-white bg-green-500 py-2 px-4 rounded-lg">Scopri di
+                        più</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bg-gray-800 text-white text-center py-4">
         <p>&copy; 2025 Biologika - Tutti i diritti riservati.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
