@@ -27,7 +27,13 @@ window.addEventListener('load', function () {
 
     if (savedTheme === 'dark') {
         body.classList.add('dark-mode');
+        button.textContent = "White mode";
+        button.style.color = "#333333";
+        button.style.backgroundColor = "white";
     } else {
         body.classList.remove('dark-mode');
+        button.textContent = "Dark mode";
+        button.style.color = "white";
+        button.style.backgroundColor = "#333333";
     }
 });
