@@ -3,8 +3,17 @@ body.dark-mode {
     color: #ffffff;
 }
 
+.dark-mode nav {
+    background-color: rgb(51, 51, 51);
+}
+
 .dark-mode .card {
     background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark-mode section p,
+.dark-mode section li {
     color: #ffffff;
 }
 
@@ -17,10 +26,18 @@ body.dark-mode {
     color: white;
 }
 
+.dark-mode a:hover {
+    color: white;
+}
+
 .dark-mode #chi-siamo {
     background-color: #1e1e1e !important;
 }
 
-.dark-mode a:hover {
-    color: rgb(137, 137, 137);
+.dark-mode #navbar-toggler {
+    border-color: white !important;
+}
+
+button:hover {
+    cursor: pointer;
 }
